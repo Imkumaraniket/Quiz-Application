@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Instructions</title>
+    <link rel="stylesheet" href="./instruction.css">
+</head>
+<body>
+    <div class="instruction-container">
+        <h1>Dynamic Quiz Instructions</h1>
+        <div class="instructions">
+            <p>
+                <center><b>Welcome to the quiz! Here’s everything you need to know before you start</b></center>
+            </p>
+            <ol>
+                <li><strong>Number of Questions:</strong> 5 multiple-choice questions.</li>
+                <li><strong>Answer Options:</strong> Each question has four answer options, but only one is correct.</li>
+                <li><strong>Navigation:</strong> You can use the "Next" and "Previous" buttons to navigate between questions.</li>
+                <li><strong>Timer:</strong> You have 30 seconds to complete the entire quiz.</li>
+                <li><strong>Auto-submit:</strong> The quiz will auto-submit when the time runs out.</li>
+                <li><strong>Scoring:</strong> You'll get 1 point for each correct answer. The total score will be displayed at the end.</li>
+                <li><strong>Summary:</strong> At the end, you'll see a summary of your score, the correct answers, and the time left (if any).</li>
+                <li><strong>Feedback:</strong> For each answer, the system will highlight your choice (green for correct, red for wrong).</li>
+                <li><strong>Progress:</strong> A progress bar will show how many questions you’ve completed.</li>
+                <li><strong>Restart:</strong> After completing the quiz, you can restart it from the summary screen.</li>
+            </ol>
+            <center><p><b>Good luck, and have fun!</b></p></center>
+        </div>
+        <button class="start-btn" onclick="startQuiz()">Start Quiz</button>
+        <button class="start-btn" onclick="startQuiz1()">Home</button>
+    </div>
+
+    <script>
+        function startQuiz() {
+            window.location.href = 'quizindex.html';  
+        }
+        function startQuiz1() {
+            window.location.href = 'index.html';  
+        }
+    </script>
+</body>
+</html>

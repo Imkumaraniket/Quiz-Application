@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    background-color:white;
+    overflow: hidden;
+    
+}
+
+.image-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background {
+    width: 30vw;
+    height: auto;
+    border-radius: 50%;
+}
+
+.main-logo {
+    width: 20vw;
+    height: auto;
+    border-radius: 50%;
+}
+.quiz-title {
+    font-size: 1.5rem;  
+    color: #333;
+    font-family: cursive;
+    transition: transform 0.5s ease-in-out, color 0.5s ease, text-shadow 0.5s;
+    transform: translateY(-10px);
+    letter-spacing: 1px;  
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);  
+    background: rgba(255, 255, 255, 0.8);  
+    border-radius: 5px;  
+}
+
+.quiz-title:hover {
+    transform: translateY(0px) scale(1.1);
+    color: #007bff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);  
+}
+.start-btn {
+    margin-top: 10px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: cyan;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.4s, transform 0.3s ease;
+}
+
+.start-btn:hover {
+    background-color: red;
+    color: white;
+    transform: scale(1.2);  
+}
+
+.start-btn:active {
+    transform: scale(0.96);  
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .background {
+        width: 25vw;
+    }
+
+    .main-logo {
+        width: 15vw;
+        margin-top: 15px;
+    }
+    .quiz-title {
+        font-size: 1.2rem;
+        margin: 15px 0;
+    }
+    .start-btn {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .background {
+        width: 30vw;
+    }
+
+    .main-logo {
+        width: 20vw;
+        margin-top: 10px;
+    }
+    .quiz-title {
+        font-size: 1rem;
+        margin: 10px 0;
+    }
+    .start-btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+}
